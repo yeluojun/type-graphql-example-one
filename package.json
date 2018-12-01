@@ -1,0 +1,24 @@
+{
+  "name": "example_one",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.2.2",
+    "class-transformer": "^0.2.0",
+    "express-graphql": "^0.7.1",
+    "graphql-playground-middleware-express": "^1.7.8",
+    "graphql-query-complexity": "^0.2.2",
+    "reflect-metadata": "^0.1.12",
+    "type-graphql": "^0.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.29",
+    "ts-node": "3.3.0",
+    "typescript": "2.5.2"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "migration": "typeorm migration:run"
+  }
+}
