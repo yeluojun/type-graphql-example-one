@@ -14,9 +14,9 @@ export class RecipeResolver{
     return await this.items.slice(0, count);
   }
 
-  /* Complexity in field resolver overrides complexity of equivalent field type */
-  // @FieldResolver(returns => Number,{ complexity: 5 })
-  // ratingsCount(@Root() recipe: Recipe): number {
-  //   return recipe.ratings.length;
-  // }
+   // Complexity in field resolver overrides complexity of equivalent field type
+  @FieldResolver(returns => Number,{ complexity: 5 })
+  ratingsCount(@Root() recipe: Recipe): number {
+    return recipe.ratings.length;
+  }
 }
